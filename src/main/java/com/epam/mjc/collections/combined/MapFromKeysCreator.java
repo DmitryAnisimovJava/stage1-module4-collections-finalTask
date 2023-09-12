@@ -23,8 +23,7 @@ public class MapFromKeysCreator {
 				setOfValues.add(myQueue.peek());
 				resultMap.put(myQueue.peek().length(), setOfValues);
 				myQueue.poll();
-			} 
-			if (resultMap.containsKey(myQueue.peek().length())) {
+			} else  {
 				Set<String> returnedSet = resultMap.get(myQueue.peek().length());
 				returnedSet.add(myQueue.peek());
 				resultMap.put(myQueue.peek().length(), returnedSet);
